@@ -21,7 +21,7 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/glowing-cards-animation.git
+   git clone https://github.com/Raju-Neduri/CSS-Border-Animation
 
 2. **Navigate to the Project Folder:**
 
