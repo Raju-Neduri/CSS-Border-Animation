@@ -16,6 +16,12 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 - CSS3 (with custom properties and animations)
 - Responsive design using media queries
 
+## Live Demo
+
+Check out the live demo here: [Glowing Cards Demo](https://Raju-Neduri.github.io/CSS-Border-Animation/)
+
+
+
 ## Usage
 
 1. **Clone the Repository:**
@@ -47,10 +53,6 @@ Feel free to customize the cards to suit your project:
   - Adjust the animation timings and effects to fit your design vision.
   - Extend the HTML structure with additional content or cards.
 
-# Technologies
-- HTML5
-
-- CSS3 (including custom properties, animations, and responsive design)
 
 # Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your changes.
@@ -64,7 +66,6 @@ This project is licensed under the MIT License.
 - Open source community for providing continuous support and feedback.
 
 
-This version is well-organized and properly formatted for GitHub. Adjust any placeholder details (like the repository URL) as needed.
 
 
 
