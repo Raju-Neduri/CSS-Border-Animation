@@ -1,0 +1,181 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+}
+
+body {
+  min-height: 100vh;
+  background: #0b0d15;
+  color: #f1f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: white;
+}
+
+/* Paragraph Styling with Hover Effects and Underline */
+p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0.05rem;
+  margin: 0.5em 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+p:hover {
+  transform: scale(1.03);
+  letter-spacing: 0.1rem;
+}
+
+/* Rainbow Paragraph Underline */
+.rainbow-paragraph::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  /* Fixed the left position */
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #6a11cb);
+  transition: width 0.3s ease;
+}
+
+p:hover::after {
+  width: 100%;
+  /* Expands the underline */
+}
+
+/* Blue Paragraph Underline */
+.blue-paragraph::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  /* Fixed to animate from the left */
+  background: linear-gradient(90deg, blue, blue);
+  /* Fixed the syntax */
+  transition: width 0.3s ease;
+}
+
+.blue-paragraph:hover::after {
+  width: 100%;
+  /* Expands the underline */
+}
+
+/* Glowing Card Base */
+.card,
+.card-2,
+.card-3 {
+  margin: 0 auto;
+  padding: 2em;
+  width: 300px;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Conic Gradient Animation */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after,
+.card::before,
+.card-2::after,
+.card-2::before,
+.card-3::after,
+.card-3::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+
+/* Unique Gradients for Each Card */
+.card::after {
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+}
+
+.card-2::after {
+  background-image: conic-gradient(from var(--angle), transparent, blue);
+}
+
+.card-3::after {
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+}
+
+/* Blurred Glow Effect */
+.card::before,
+.card-2::before,
+.card-3::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    gap: 2em;
+    /* Proper gap between stacked cards */
+    padding: 1em;
+  }
+
+  .card,
+  .card-2,
+  .card-3 {
+    width: 90%;
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6rem;
+  }
+}
