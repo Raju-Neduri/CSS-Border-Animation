@@ -32,7 +32,7 @@ Check out the live demo here: [Glowing Cards Demo](https://Raju-Neduri.github.io
    git clone https://github.com/Raju-Neduri/CSS-Border-Animation
 
 2. **Navigate to the Project Folder:**
-
+    ```bash
     cd glowing-cards-animation
 
 3. **Open the index.html File in Your Browser:**
