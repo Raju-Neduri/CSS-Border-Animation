@@ -25,11 +25,11 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 
 2. **Navigate to the Project Folder:**
 
-cd glowing-cards-animation
+  cd glowing-cards-animation
 
-3.**Open the index.html File in Your Browser:**
+3. **Open the index.html File in Your Browser:**
 
-You can simply double-click the index.html file, or use a live server extension in your code editor to preview the animation in your browser.
+  You can simply double-click the index.html file, or use a live server extension in your code editor to preview the animation in your browser.
 
 #Project Structure
 
