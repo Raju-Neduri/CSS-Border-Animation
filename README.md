@@ -30,7 +30,7 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 3. **Open the index.html File in Your Browser:**
 
    You can simply double-click the index.html file, or use a live server extension in your code editor to preview the animation in your browser.
-   
+
 
 
 # Project Structure
@@ -55,15 +55,17 @@ Feel free to customize the cards to suit your project:
 # Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your changes.
 
-License
+# License
 This project is licensed under the MIT License.
 
-Acknowledgments
-Poppins Font by Google Fonts
+# Acknowledgments
+- Poppins Font by Google Fonts
+- Various online CSS tutorials and resources that inspired the animations and design.
+- Open source community for providing continuous support and feedback.
 
-Various online CSS tutorials and resources that inspired the animations and design.
 
-Open source community for providing continuous support and feedback.
+This version is well-organized and properly formatted for GitHub. Adjust any placeholder details (like the repository URL) as needed.
+
 
 
 
