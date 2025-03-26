@@ -33,6 +33,7 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 
 # Project Structure
     glowing-cards-animation/
+    
 ├── index.html    # Main HTML file with the card layout
 ├── style.css     # CSS file containing all the styles and animations
 └── README.md     # This file
