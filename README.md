@@ -25,18 +25,19 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 
 2. **Navigate to the Project Folder:**
 
-   cd glowing-cards-animation
+    cd glowing-cards-animation
 
 3. **Open the index.html File in Your Browser:**
 
    You can simply double-click the index.html file, or use a live server extension in your code editor to preview the animation in your browser.
+   
+
 
 # Project Structure
     glowing-cards-animation/
-
-├── index.html    # Main HTML file with the card layout
-├── style.css     # CSS file containing all the styles and animations
-└── README.md     # This file
+    ├── index.html    # Main HTML file with the card layout
+    ├── style.css     # CSS file containing all the styles and animations
+    └── README.md     # This file
 
 
 # Customization
@@ -52,7 +53,7 @@ Feel free to customize the cards to suit your project:
 - CSS3 (including custom properties, animations, and responsive design)
 
 # Contributing
-  Contributions are welcome! Please fork this repository and submit a pull request with your changes.
+Contributions are welcome! Please fork this repository and submit a pull request with your changes.
 
 License
 This project is licensed under the MIT License.
