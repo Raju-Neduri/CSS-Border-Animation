@@ -20,9 +20,11 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 
 Check out the live demo here: [Glowing Cards Demo](https://Raju-Neduri.github.io/CSS-Border-Animation/)
 
+## Screenshots
 
+![Screenshot 1](./Screenshots/screenshot-1.png)
 
-## Usage
+# Usage
 
 1. **Clone the Repository:**
 
