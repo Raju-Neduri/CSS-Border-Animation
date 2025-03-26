@@ -33,7 +33,7 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 
 # Project Structure
     glowing-cards-animation/
-    
+
 ├── index.html    # Main HTML file with the card layout
 ├── style.css     # CSS file containing all the styles and animations
 └── README.md     # This file
@@ -42,18 +42,17 @@ This project demonstrates a set of stylish, animated cards built with HTML and C
 # Customization
 
 Feel free to customize the cards to suit your project:
+  - Modify the color schemes and gradients in style.css.
+  - Adjust the animation timings and effects to fit your design vision.
+  - Extend the HTML structure with additional content or cards.
 
-  -Modify the color schemes and gradients in style.css.
-  -Adjust the animation timings and effects to fit your design vision.
-  -Extend the HTML structure with additional content or cards.
+# Technologies
+- HTML5
 
-Technologies
-HTML5
+- CSS3 (including custom properties, animations, and responsive design)
 
-CSS3 (including custom properties, animations, and responsive design)
-
-Contributing
-Contributions are welcome! Please fork this repository and submit a pull request with your changes.
+# Contributing
+  Contributions are welcome! Please fork this repository and submit a pull request with your changes.
 
 License
 This project is licensed under the MIT License.
