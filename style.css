@@ -1,8 +1,7 @@
-/* Reset and Global Styles */
-* {
+Reset and Global Styles * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 html {
@@ -52,14 +51,12 @@ p:hover {
   height: 2px;
   bottom: -2px;
   left: 0;
-  /* Fixed the left position */
   background: linear-gradient(90deg, #ff8a00, #e52e71, #6a11cb);
   transition: width 0.3s ease;
 }
 
 p:hover::after {
   width: 100%;
-  /* Expands the underline */
 }
 
 /* Blue Paragraph Underline */
@@ -70,15 +67,12 @@ p:hover::after {
   height: 2px;
   bottom: -2px;
   left: 0;
-  /* Fixed to animate from the left */
   background: linear-gradient(90deg, blue, blue);
-  /* Fixed the syntax */
   transition: width 0.3s ease;
 }
 
 .blue-paragraph:hover::after {
   width: 100%;
-  /* Expands the underline */
 }
 
 /* Glowing Card Base */
@@ -94,6 +88,52 @@ p:hover::after {
   position: relative;
 }
 
+/* Card-2 Glow and Animation */
+.card-2 .glass {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 50%;
+  display: block;
+  pointer-events: none;
+}
+
+.card-2::before,
+.card-2::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: -1;
+  background: conic-gradient(from var(--angle), #0c63e7, #060c21, #d11149, #060c21, #0c63e7);
+}
+
+.card-2::after {
+  z-index: -2;
+  filter: blur(20px);
+}
+
+.card-2:hover::before,
+.card-2:hover::after {
+  animation: glowing-border 3.5s linear infinite, blur-effect 3.5s linear infinite;
+}
+
+/* Card-2 Underline */
+.card-2::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #0c63e7, #d11149);
+  transition: width 0.3s ease;
+}
+
+.card-2:hover::after {
+  width: 100%;
+}
+
 /* Conic Gradient Animation */
 @property --angle {
   syntax: "<angle>";
@@ -101,10 +141,28 @@ p:hover::after {
   inherits: false;
 }
 
+@keyframes glowing-border {
+  from {
+    --angle: 53deg;
+  }
+
+  to {
+    --angle: 413deg;
+  }
+}
+
+@keyframes blur-effect {
+  from {
+    filter: blur(20px);
+  }
+
+  to {
+    filter: blur(19px);
+  }
+}
+
 .card::after,
 .card::before,
-.card-2::after,
-.card-2::before,
 .card-3::after,
 .card-3::before {
   content: '';
@@ -117,7 +175,7 @@ p:hover::after {
   z-index: -1;
   padding: 3px;
   border-radius: 10px;
-  animation: 3s spin linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 /* Unique Gradients for Each Card */
@@ -125,17 +183,12 @@ p:hover::after {
   background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
 }
 
-.card-2::after {
-  background-image: conic-gradient(from var(--angle), transparent, blue);
-}
-
 .card-3::after {
-  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  background-image: conic-gradient(from var(--angle), transparent, blue);
 }
 
 /* Blurred Glow Effect */
 .card::before,
-.card-2::before,
 .card-3::before {
   filter: blur(1.5rem);
   opacity: 0.5;
@@ -157,7 +210,6 @@ p:hover::after {
   body {
     flex-direction: column;
     gap: 2em;
-    /* Proper gap between stacked cards */
     padding: 1em;
   }
 
